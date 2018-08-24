@@ -1,0 +1,32 @@
+<form >
+
+<div >
+  <mat-form-field >
+    <input matInput placeholder="Name" value="" #myname>
+    <mat-hint>Please enter your name</mat-hint>
+  </mat-form-field>
+  </div>
+ 
+  <div >
+    <mat-form-field>
+      <input matInput placeholder="Enter your password" type="password" #mypass>
+      
+    </mat-form-field>
+  </div>
+
+
+<br>
+<div >
+    <button  mat-flat-button (click)="fun(myname.value,mypass.value)">click to submit</button>
+
+
+
+  </div>
+
+
+
+</form>
+<h4>your name is</h4><br>
+{{name}}
+<h4>your password is</h4><br>
+{{pass}}
